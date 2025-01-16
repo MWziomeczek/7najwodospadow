@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankieta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="foto/logo.jpg">
+</head>
+<body>
+    <header id="header">
+        <div>
+            <img src="foto/logo.jpg" alt="Logo" class="logo">
+        </div>
+        <br>
+        <p class="glowny">7 Największych wodospadów na świecie</p>
+    </header>
+    <nav id="nav">
+        <a href="index.html">Strona główna&#12644;</a>
+        <a href="informacje.html">Więcej informacji&#12644;</a>
+    </nav>
+    <div id="form">
+        <form class="form" action="/submit" method="post">
+            <label for="imie">Imię:</label><br>
+            <input type="text" id="imie" name="imie"><br>
+            <label for="nazwisko">Nazwisko:</label><br>
+            <input type="text" id="nazwisko" name="nazwisko"><br><br>
+    
+            <label for="wiek">Ile masz lat:</label>
+            <select id="wiek" name="wiek">
+                <option value="13">Mniej niż 13</option>
+                <option value="1315">13-15</option>
+                <option value="1617">16-17</option>
+                <option value="18">Więcej niż 18</option>
+            </select>
+    
+            <p class="form">Lubisz podróżować?</p>
+    
+            <input type="radio" id="tak" name="miasto" value="tak">
+            <label for="tak">Tak</label><br>
+            <input type="radio" id="nie" name="miasto" value="nie">
+            <label for="nie">Nie</label><br>
+    
+            <p class="form">Co ci się podobało w tej stronie?</p>
+    
+            <input type="checkbox" id="k" name="k" value="Kolory">
+            <label for="k">Kolory</label><br>
+            <input type="checkbox" id="z" name="z" value="Zdjecia">
+            <label for="z">Zdjęcia</label><br>
+            <input type="checkbox" id="i" name="i" value="Inne">
+            <label for="i">Coś innego</label>
+            <br>
+            <br>
+            <button type="submit">Wyślij</button>
+            <button type="reset">Wyczyść formularz</button>
+          </form>
+    </div>
+    <footer id="footer">
+        <p>Strona stworzona przez: Michała Włodarczyka 2tb</p>
+    </footer>
+</body>
+</html>

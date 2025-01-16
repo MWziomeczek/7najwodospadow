@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="foto/logo.jpg">
+</head>
+<body>
+    <header id="header">
+        <div>
+            <img src="foto/logo.jpg" alt="Logo" class="logo">
+        </div>
+        <br>
+        <p class="glowny">7 Największych wodospadów na świecie</p>
+    </header>
+    <nav id="nav">
+        <a href="ankieta.html">Ankieta&#12644;</a>
+        <a href="informacje.html">Więcej informacji&#12644;</a>
+    </nav>
+    <main id="main">
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+        
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+        </script>
+
+        <div>
+            <h1 id="hwmain">1. Salto Angel</h1>
+            <p id="pwmain">Kraj: Wenezuela, Wysokość: 979m</p>
+            <h1 id="hwmain">2. Tugela Falls</h1>
+            <p id="pwmain">Kraj: RPA, Wysokość: 948m</p>
+            <h1 id="hwmain">3. Tres Hermanas</h1>
+            <p id="pwmain">Kraj: Peru, Wysokość: 914m</p>
+            <h1 id="hwmain">4. Olo'upena Falls</h1>
+            <p id="pwmain">Kraj: USA, Wysokość: 900m</p>
+            <h1 id="hwmain">5. Yumbilla Falls</h1>
+            <p id="pwmain">Kraj: Peru, Wysokość: 896m</p>
+            <h1 id="hwmain">6. Vinnufossen</h1>
+            <p id="pwmain">Kraj: Norwegia, Wysokość: 865m</p>
+            <h1 id="hwmain">7. Balaifossen</h1>
+            <p id="pwmain">Kraj: Norwegia, Wysokość: 850m</p>
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 7</div>
+                <img src="foto/Salto.jpg" class="galeria">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 7</div>
+                <img src="foto/Tugela.jpg" class="galeria">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 7</div>
+                <img src="foto/Tres.jpg" class="galeria">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 7</div>
+                <img src="foto/Oloupena.jpg" class="galeria">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 7</div>
+                <img src="foto/Yumbilla.jpg" class="galeria">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 7</div>
+                <img src="foto/Vinnufossen.jpg" class="galeria">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 7</div>
+                <img src="foto/Balaifossen.jpg" class="galeria">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
+    </main>
+    <footer id="footer">
+        <p>Strona stworzona przez: Michała Włodarczyka 2tb</p>
+    </footer>
+</body>
+</html>
