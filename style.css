@@ -36,11 +36,12 @@ a:hover {
 @media (max-width: 600px) {
     #header {
         background-color: #142b4a;
-        width: 100%;
+        width: 50%;
         height: 7vh;
         justify-content: center;
         align-items: center;
         display: flex;
+        float: left;
     }
 
     .glowny {
@@ -59,11 +60,13 @@ a:hover {
 
     #nav {
         height: 5vh;
-        background-color: #122947fe;
+        width: 50%;
+        background-color: #406c84fe;
         align-items: center;
         justify-content: center;
         text-align: center;
         display: flex;
+        float: right;
     }
     #nav2 {
         height: 5vh;
@@ -82,13 +85,14 @@ a:hover {
 
 
     #main {
-        background-color: cadetblue;
+        background-color: rgb(5, 109, 112);
         margin: 0 auto;
         border-radius: 2%;
         width: 90%;
         height: 81vh;
         min-height: 850px;
         flex-grow: 1;
+        color: wheat;
     }
 
     #main2 {
@@ -156,11 +160,12 @@ a:hover {
 @media (min-width: 601px) and (max-width: 1199px) {
     #header {
         background-color: #142b4a;
-        width: 100%;
+        width: 70%;
         height: 9vh;
         justify-content: center;
         align-items: center;
         display: flex;
+        float: left;
     }
 
     .glowny {
@@ -178,12 +183,16 @@ a:hover {
     }
 
     #nav {
-        height: 5vh;
-        background-color: #122947fe;
+        height: 10vh;
+        width: 40%;
+        background-color: #548dd7fe;
         align-items: center;
         justify-content: center;
         text-align: center;
         display: flex;
+        text-shadow: black 1px 1px 1px;
+        border-radius: 35%;
+        float: left;
     }
 
     #nav2 {
@@ -196,7 +205,8 @@ a:hover {
     }
 
     #main {
-        background-color: cadetblue;
+        background-color: rgb(66, 100, 101);
+        color: white;
         margin: 0 auto;
         border-radius: 2%;
         width: 90%;
